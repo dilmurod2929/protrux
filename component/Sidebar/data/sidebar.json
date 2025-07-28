@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Features",
+    "icon": "bi-gear-fill",
+    "path": "features"
+  },
+  {
+    "title": "Integrations",
+    "icon": "bi-question-circle-fill",
+    "path": "integrations"
+  },
+  {
+    "title": "Contact",
+    "icon": "bi-question-circle-fill",
+    "path": "contact"
+  }
+]

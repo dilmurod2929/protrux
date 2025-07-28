@@ -1,0 +1,31 @@
+{
+  "name": "second-tt-eld-new-design",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "@editorjs/editorjs": "^2.24.3",
+    "@netlify/config": "^18.0.1",
+    "axios": "^1.4.0",
+    "moment": "^2.29.4",
+    "next": "12.1.5",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-ga4": "^2.1.0",
+    "react-icons": "^4.3.1",
+    "react-transition-group": "^4.4.5",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
+    "html-loader": "^5.0.0"
+  }
+}

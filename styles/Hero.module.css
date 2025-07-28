@@ -1,0 +1,295 @@
+.tabItem {
+    border: none;
+    background: #eeeeee;
+    border-radius: 4px;
+    font-family: var(--inter-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    margin-left: 21px;
+    cursor: pointer;
+}
+
+.angryGrid {
+    border: 1px solid white;
+    margin-top: 48px;
+    display: grid;
+    grid-template-areas:
+    "item1 item3"
+    "item2 item3"
+    "item4 item5"
+    "item4 item6"
+    "item7 item9"
+    "item8 item9";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.item1 {
+    grid-area: item1;
+    border: 1.2px solid #e7e7e7;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.item1:hover {
+    transform: scale(1.003);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+    border: 1.2px solid var(--orange-background);
+
+}
+
+.item2 {
+    grid-area: item2;
+    flex-direction: column;
+    align-items: center;
+    border: 1.2px solid #e7e7e7;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.item2:hover {
+    transform: scale(1.003);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+    border: 1.2px solid var(--orange-background);
+}
+
+.item3 {
+    grid-area: item3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 8px 40px 0px 40px;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.item3:hover {
+    transform: scale(1.003);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+    border: 1.2px solid var(--orange-background);
+
+}
+
+.item4 {
+    grid-area: item4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 0 41px 32px 41px;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.item4:hover {
+    transform: scale(1.003);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+    border: 1.2px solid var(--orange-background);
+
+}
+.item5 {
+    grid-area: item5;
+    border: 1.2px solid #e7e7e7;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.item5:hover {
+    transform: scale(1.003);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+    border: 1.2px solid var(--orange-background);
+}
+
+.item6 {
+    grid-area: item6;
+    border: 1.2px solid #e7e7e7;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.item6:hover {
+    transform: scale(1.003);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+    border: 1.2px solid var(--orange-background);
+}
+
+.item7 {
+    grid-area: item7;
+    border: 1.2px solid #e7e7e7;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.item7:hover {
+    transform: scale(1.003);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+    border: 1.2px solid var(--orange-background);
+}
+
+.item8 {
+    grid-area: item8;
+    border: 1.2px solid #e7e7e7;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+
+}
+
+.item8:hover {
+    transform: scale(1.003);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+    border: 1.2px solid var(--orange-background);
+}
+
+.item9 {
+    grid-area: item9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 32px 40px 32px 40px;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+
+}
+
+.item9:hover {
+    transform: scale(1.003);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+    border: 1.2px solid var(--orange-background);
+}
+
+@media (max-width: 1024px) {
+    .angryGrid {
+        grid-template-areas: none !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        grid-gap: 24px;
+    }
+
+    .item1 {
+        grid-area: initial;
+    }
+
+    .item2 {
+        grid-area: unset;
+    }
+
+    .item3 {
+        grid-area: unset;
+        padding: 16px;
+    }
+
+    .item4 {
+        grid-area: unset;
+        padding: 16px;
+    }
+
+    .item5 {
+        grid-area: unset;
+    }
+
+    .item6 {
+        grid-area: unset;
+    }
+
+    .item7 {
+        grid-area: unset;
+    }
+
+    .item8 {
+        grid-area: unset;
+    }
+
+    .item9 {
+        display: none;
+        grid-area: unset;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .angryGrid {
+        border: 1px solid white;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        grid-template-areas: "none";
+        /* grid-template-rows: repeat(2, 1fr); */
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .item3 {
+        grid-area: item3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1.2px solid #e7e7e7;
+        box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+        border-radius: 4px;
+        padding: 16px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .item4 {
+        grid-area: item4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1.2px solid #e7e7e7;
+        box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+        border-radius: 4px;
+        padding: 16px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .item9 {
+        grid-area: item9;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        border: 1.2px solid #e7e7e7;
+        box-shadow: 0px 4px 20px rgba(99, 99, 99, 0.12);
+        border-radius: 4px;
+        padding: 16px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .paccar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
